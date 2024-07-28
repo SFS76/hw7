@@ -124,6 +124,16 @@ public class Main {
             }
             System.out.println("Сегодня пятница, " + d + "-е число. Необходимо подготовить отчет");
         }
+//lesson2 task 8
+        int currentYear = 2024;
+        int pre200Year = currentYear - 200;
+        int next100Year = currentYear + 100;
+        for (int y = pre200Year; y < next100Year; y ++) {
+            if (( 1817 + y) % 79 != 0) {
+                continue;
+            }
+            System.out.println("В " + y + " году над Землей пролетает комета.");
+        }
 
     }
 }
