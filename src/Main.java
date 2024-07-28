@@ -103,6 +103,27 @@ public class Main {
                 }
             System.out.println("Месяц " + month1 + ", сумма накоплений равна " + sum3 +" рублей" );
         }
+//lesson2 task 6
+        int contribution4 = 15000;
+        float rate4 = 0.07f;
+        float sum4 = 0f;
+        int month4 = 0;
+        while (month4 <= 12 * 9) {
+            sum4 = sum4 + sum4 * rate4 + contribution4;
+            month4 ++;
+            if (month4 % 6 != 0) {
+                continue;
+            }
+            System.out.println("Месяц " + month4 + ", сумма накоплений равна " + sum4 +" рублей" );
+        }
+//lesson2 task 7
+        int dayOfFriday = 1;
+        for (int d = 1; d < 31; d ++) {
+            if ((dayOfFriday + 5 + d) % 7 != 0) {
+                continue;
+            }
+            System.out.println("Сегодня пятница, " + d + "-е число. Необходимо подготовить отчет");
+        }
 
     }
 }
